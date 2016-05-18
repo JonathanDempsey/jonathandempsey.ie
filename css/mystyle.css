@@ -1,0 +1,637 @@
+/******************
+	CSS RESET
+******************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+/************************************
+		FONT FACES
+************************************/
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto-Black-webfont.eot');
+    src: url('../fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Black-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Black-webfont.svg#RobotoMediumItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium-webfont.svg#RobotoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold-webfont.svg#RobotoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+}
+
+@font-face {
+    font-family: 'Lora Italic';
+    src: url('../fonts/lora-italic-webfont.eot');
+    src: url('../fonts/lora-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora-italic-webfont.woff') format('woff'),
+         url('../fonts/lora-italic-webfont.ttf') format('truetype'),
+         url('../fonts/lora-italic-webfont.svg#RobotoLight') format('svg');
+}
+
+@font-face {
+    font-family: 'Lora Bold Italic';
+    src: url('../fonts/lora-bolditalic-webfontt.eot');
+    src: url('../fonts/lora-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/lora-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/lora-bolditalic-webfont.svg#RobotoLight') format('svg');
+}
+
+
+/************************************
+		LANDING PAGE
+************************************/
+
+.credit{
+	font-family: Lora Italic;
+	color: white;
+	text-align: right;
+	font-size: 12px;
+}
+
+#landingPage{
+	background-image: url("../images/backgroundImages/landingPageBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 880px;
+}
+
+#landingPageTitle{
+	font-family: Roboto Black;
+	text-align: center;
+	color: white;
+	font-size: 80px;
+	margin-top: 362px;
+}
+
+#landingPageSubtitle{
+	font-family: Lora Italic;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	margin-bottom: 260px;
+}
+
+
+/************************************
+		NAVBAR
+************************************/
+
+#navbar-main{
+	font-family: Roboto Black;
+}
+
+.navbar{
+	font-size: 18px;
+	height: 120px;
+}
+
+#navbar{
+	width: 33%;
+	margin: 0 auto;
+	margin-top:35px;
+}
+
+.logo {
+	width: 73px;
+	height: 83px;
+	margin-top: -30px;
+}
+
+.navbar-inverse{
+	border-radius: 0px;
+	border: 0px;
+	background-color: #111111;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.navbar-nav{
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.custom-nav {
+	text-align: center;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	border-bottom: 2px solid #1f68ed;
+}
+
+.custom-nav-item {
+	text-align: center;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+
+/************************************
+		PORTFOLIO PAGE
+************************************/
+
+#portfolioPageTitle {
+	font-family: Roboto Black;
+	text-align: left;
+	color: black;
+	font-size: 80px;
+	margin-top: 140px;
+	margin-bottom: 5px;
+}
+
+#portfolioPage{
+	height: 960px;
+	background-color: white;
+	background-image: url("../images/backgroundImages/PortfolioTileBG.png");
+}
+
+.projectsGroup{
+	width:730px;
+	height: 650px;
+}
+
+.projectBigTop{
+	position:relative;
+	width: 730px;
+	height: 400px;
+	margin: 10px 10px 10px 0;
+}
+
+.projectSmallOneBottom{
+	position:relative;
+	width: 355px;
+	height: 210px;
+	margin: 10px 10px 10px 0;
+	float: left;
+}
+
+.projectSmallTwoBottom{
+	position:relative;
+	width: 355px;
+	height: 210px;
+	margin: 10px 0 10px 0;
+	float: right;
+}
+
+.projectBigBottom{
+	position:relative;
+	background-color: blue;
+	width: 730px;
+	height: 400px;
+	margin: 10px 10px 10px 0;
+	clear: both;
+}
+
+.projectSmallOneTop{
+	position:relative;
+	height: 175px;
+	width: 355px;
+	height: 210px;
+	margin: 10px 10px 20px 0;
+	float: left;
+	clear: both;
+}
+
+.projectSmallTwoTop{
+	position:relative;
+	height: 175px;
+	width: 355px;
+	height: 210px;
+	margin: 10px 0 20px 0;
+	float: right;
+}
+
+/* external css: flickity.css */
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.o{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.p{
+	height: 300px;
+	width: 300px;
+}
+
+.gallery-cell {
+	width:750px;
+	height: 650px;
+	counter-increment: gallery-cell;
+}
+
+.projectTitleBG {
+	background-color: rgba(0,0,0,0.9);
+	position:absolute;
+	border-bottom: 4px solid #1f68ed;
+	width: 730px;
+	bottom:0;
+	left:0;
+}
+
+.projectTitleBGSmall {
+	background-color: rgba(0,0,0,0.9);
+	position:absolute;
+	border-bottom: 2px solid #1f68ed;
+	width: 355px;
+	bottom:0;
+	left:0;
+}
+
+.projectTitleBG a { 
+	text-decoration: none;
+}
+
+.projectTitleBGSmall a { 
+	text-decoration: none;
+}
+
+.projectTitleBG:hover { 
+	background-color: rgba(31,104,237,0.9);
+}
+
+.projectTitleBGSmall:hover { 
+	background-color: rgba(31,104,237,0.9);
+}
+
+.projectTitleBig {
+	font-family: Roboto Black;
+	text-align: left;
+	color: white;
+	font-size: 40px;
+	margin: 10px 0 2.5px 20px;
+}
+
+.projectTitleSmall {
+	font-family: Roboto Black;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	margin: 7px 0 2.5px 15px;
+}
+
+.projectSubTitleBig {
+	font-family: Lora Italic;
+	text-align: left;
+	color: white;
+	font-size: 22px;
+	margin: 2.5px 0 10px 20px;
+}
+
+.projectSubTitleSmall {
+	font-family: Lora Italic;
+	text-align: left;
+	color: white;
+	font-size: 16px;
+	margin: 2.5px 0 7px 15px;
+}
+
+.projectMarginTop {
+	margin-top: 240px;
+}
+
+.project01 {
+	background-image: url("../images/projectImages/Project01.png");
+	background-repeat: no-repeat;
+}
+
+.project02 {
+	background-image: url("../images/projectImages/Project02.png");
+	background-repeat: no-repeat;
+}
+
+.project03 {
+	background-image: url("../images/projectImages/Project03.png");
+	background-repeat: no-repeat;
+}
+
+.project04 {
+	background-image: url("../images/projectImages/Project04.png");
+	background-repeat: no-repeat;
+}
+
+.project05 {
+	background-image: url("../images/projectImages/Project05.png");
+	background-repeat: no-repeat;
+}
+
+.project06 {
+	background-image: url("../images/projectImages/Project06.png");
+	background-repeat: no-repeat;
+}
+
+.project07 {
+	background-image: url("../images/projectImages/Project07.png");
+	background-repeat: no-repeat;
+}
+
+.project08 {
+	background-image: url("../images/projectImages/Project08.png");
+	background-repeat: no-repeat;
+}
+
+.project09 {
+	background-image: url("../images/projectImages/Project09.png");
+	background-repeat: no-repeat;
+}
+
+.project10 {
+	background-image: url("../images/projectImages/Project10.png");
+	background-repeat: no-repeat;
+}
+
+.project11 {
+	background-image: url("../images/projectImages/Project11.png");
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	display: hidden;
+}
+
+/************************************
+		ABOUT PAGE
+************************************/
+
+#aboutPageTitle {
+	font-family: Roboto Black;
+	text-align: left;
+	color: white;
+	font-size: 80px;
+	margin-top: 150px;
+	margin-bottom: 40px;
+}
+
+#aboutPage{
+	background-image: url("../images/backgroundImages/aboutMeBackground.png");
+}
+
+.profiler{
+	margin-top: 5px;
+	width:310px;
+	height:310px;
+	background-image: url("../images/profile3.png");
+	background-repeat: no-repeat;
+}
+
+.profileBG{
+	background-color: rgba(0,0,0,0.8);
+	border-bottom: 2px solid #1f68ed;
+	width: 310px;
+	position:absolute;
+	bottom:0;
+	left:10;
+}
+
+.aboutMeName{
+	font-family: Roboto Black;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+	margin: 8px 0 2.5px 8px;
+}
+
+.aboutMeProf {
+	font-family: Lora Italic;
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	margin: 2.5px 0 5px 8px;
+}
+
+.aboutMeParagraph{
+	font-family: Roboto Light;
+	font-size: 24px;
+	color: white;
+}
+
+.Bold {
+	font-family: Roboto Black;
+}
+
+.contactTitle {
+	font-family: Roboto Black;
+	font-size: 65px;
+	color: white;
+	margin: 80px 0px 10px 0px;
+}
+
+.contactSubTitle {
+	font-family: Lora Italic;
+	font-size: 25px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.contactSubTitle2 {
+	font-family: Lora Italic;
+	font-size: 25px;
+	margin-top: 5px;
+	margin-bottom: 60px;
+}
+
+.contactSubTitle2 a {
+	color: white;
+}
+
+.contactSubTitle a { 
+	color: white;
+}
+
+.contactCV{ 
+	font-family: Lora Italic;
+	font-size: 24px;
+	color: white;
+	margin-bottom: 85px;
+}
+
+.contactCV a { 
+	color: white;
+}
+
+.techImg{
+	width: 25px;
+	height: 25px;
+	margin: 0 5px 5px 0;
+}
+
+
+
+/************************************
+		Media Queries
+************************************/
+@media screen and (max-width: 990px) {
+	
+	#landingPageSubtitle{
+		margin-bottom: 172px;
+	}
+	
+	.aboutMeParagraph{
+		margin: 20px 0 0 0;
+	}
+	.profiler{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 650px) {
+	
+	#landingPage{
+		height: 680px;
+	}
+	
+	#landingPageTitle{
+		font-family: Roboto Black;
+		text-align: center;
+		color: white;
+		font-size: 80px;
+		margin-top: 262px;
+	}
+	
+	#landingPageSubtitle{
+		margin-bottom: 122px;
+	}
+	.navbar{
+		font-size: 17px;
+		height:70px;
+	}
+	
+	.logo {
+		width: 58px;
+		height: 68px;
+	}
+	
+}
+
+@media screen and (max-width: 480px) {
+
+	.navbar{
+		font-size: 17px;
+		height: 50px;
+	}
+	
+	.logo {
+		width: 53px;
+		height: 63px;
+	}
+	
+	#landingPage{
+		height: 310px;
+	}
+
+	#landingPageTitle{
+		font-size: 24px;
+		margin-top: 100px;
+	}
+	
+	#portfolioPage{
+		height: 820px;
+	}
+	#landingPageSubtitle{
+		font-size: 16px;
+		margin-bottom: 100px;
+	}
+	
+	#portfolioPageTitle {
+		text-align: center;
+		font-size: 25px;
+		margin-top: 70px;
+		margin-bottom: 5px;
+	}
+	
+	#aboutPageTitle {
+		text-align: center;
+		font-size: 25px;
+		margin-top: 70px;
+	}
+	
+	.aboutMeName{
+		font-size: 16px;
+	}
+
+	.aboutMeProf {
+		font-size: 14px;
+	}
+
+	.aboutMeParagraph{
+		font-size: 18px;
+	}
+	
+	.contactTitle {
+		font-size: 25px;
+	}
+	
+	.contactSubTitle {
+		font-size: 16px;
+	}
+
+	.contactSubTitle2 {
+		font-size: 16px;
+		margin-bottom: 50px;
+	}
+	
+	.contactCV{ 
+		font-size: 16px;
+	}
+	
+	.techImg{
+		width: 20px;
+		height: 20px;
+		margin: 0 5px 5px 0;
+	}
+	
+	.profiler{
+		width:210px;
+		height:210px;
+		background-image: url("../images/profile3_small.png");
+	}
+
+	.profileBG{
+		width: 210px;
+	}
+}
