@@ -507,13 +507,16 @@ strong, sub, sup, tt, var, legend, fieldset {
 ************************************/
 @media screen and (max-width: 990px) {
 	
+	/* Landing */
 	#landingPageSubtitle{
 		margin-bottom: 172px;
 	}
 	
+	/* About */
 	.aboutMeParagraph{
 		margin: 20px 0 0 0;
 	}
+	
 	.profiler{
 		margin-left: auto;
 		margin-right: auto;
@@ -521,6 +524,7 @@ strong, sub, sup, tt, var, legend, fieldset {
 }
 @media screen and (max-width: 650px) {
 	
+	/* Landing */
 	#landingPage{
 		height: 680px;
 	}
@@ -536,6 +540,8 @@ strong, sub, sup, tt, var, legend, fieldset {
 	#landingPageSubtitle{
 		margin-bottom: 122px;
 	}
+	
+	/* Nav */
 	.navbar{
 		font-size: 17px;
 		height:70px;
@@ -550,6 +556,7 @@ strong, sub, sup, tt, var, legend, fieldset {
 
 @media screen and (max-width: 480px) {
 
+	/* Nav */
 	.navbar{
 		font-size: 17px;
 		height: 50px;
@@ -560,6 +567,15 @@ strong, sub, sup, tt, var, legend, fieldset {
 		height: 63px;
 	}
 	
+	.navbar-inverse .navbar-nav>li>a{
+		color: #1f68ed;
+	}
+	
+	.navbar-inverse .navbar-nav>li>a:hover{
+		color: #1f68ed;
+	}
+	
+	/* Landing */
 	#landingPage{
 		height: 310px;
 	}
@@ -569,13 +585,15 @@ strong, sub, sup, tt, var, legend, fieldset {
 		margin-top: 100px;
 	}
 	
-	#portfolioPage{
-		height: 820px;
-	}
 	#landingPageSubtitle{
 		font-size: 16px;
 		margin-bottom: 100px;
 	}
+	
+	/* Portfolio */
+	#portfolioPage{
+		height: 820px;
+	}	
 	
 	#portfolioPageTitle {
 		text-align: center;
@@ -584,6 +602,7 @@ strong, sub, sup, tt, var, legend, fieldset {
 		margin-bottom: 5px;
 	}
 	
+	/* About */
 	#aboutPageTitle {
 		text-align: center;
 		font-size: 25px;
