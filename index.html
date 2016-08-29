@@ -47,11 +47,11 @@
 
 				$window.scroll(function() {
 					if ($window.scrollTop() >= distance) {
-						navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+						navbar.removeClass('navbar-fixed-top custom-sticky-nav').addClass('navbar-fixed-top');
 						$("body").css("padding-top", "0px");
 					} 
 					else {
-						navbar.removeClass('navbar-fixed-top');
+						navbar.removeClass('navbar-fixed-top custom-sticky-nav').addClass('custom-sticky-nav');
 						$("body").css("padding-top", "0px");
 					}
 				});
@@ -81,18 +81,23 @@
 			<p class="credit snap">Background image taken by <a href="http://www.itziartelletxearocha.com/">Itziar Telletxea Rocha</a></p>	
 			<div class="container">			
 				<div class="row">
-					<div class="col-md-12">
-						<h1 id="landingPageTitle">JONATHAN DEMPSEY</h1>
-					</div>
-					
-					<div class="col-md-12">
-						<h2 id="landingPageSubtitle">Web Developer & Digital Designer</h2>
-					</div>
+					<div class="centerPage">
+						<div class="col-md-12">
+							<h1 id="landingPageTitle">JONATHAN DEMPSEY</h1>
+						</div>
+						
+						<div class="col-md-12">
+							<h2 id="landingPageSubtitle">Web Developer & Digital Designer</h2>
+						</div>
+					</div><!-- end centerPage -->
 				</div><!-- end row -->
 			</div><!-- end container -->
 				
-			<!--	Navbar	-->
-			<nav id="navbar-main" class="navbar navbar-inverse">
+			
+		</div><!-- end landingPage -->
+
+		<!--	Navbar	-->
+			<nav id="navbar-main" class="navbar navbar-inverse custom-sticky-nav">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -103,126 +108,120 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav custom-nav">
 						<li class="custom-nav-item"><a href="#portfolioPage">PORTFOLIO</a></li>
-						<li class="custom-nav-item"><a href="#landingPage"><img src="./images/Logo2.png" class="logo"></a></li>
+						<li id="landingLogo" class="custom-nav-item"><a href="#landingPage"><img src="./images/Logo2.png" class="logo"></a></li>
+						<li id="landingText" class="custom-nav-item"><a href="#landingPage">HOME</a></li>
 						<li class="custom-nav-item"><a href="#aboutPage">ABOUT/ME</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</nav><!-- end navbar -->
-		</div><!-- end landingPage -->
 
-		
 		<!--	Portfolio Page	-->
 		<div id="portfolioPage">
 			<div class="container snap">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 id="portfolioPageTitle">PORTFOLIO</h1>		
+						<h1 id="portfolioPageTitle" class="test">PORTFOLIO</h1>		
 					</div>
 				</div><!-- end row -->
 			</div><!-- end container -->
 
-			<!-- Flickity HTML init -->
-			<div class="gallery js-flickity"
-				data-flickity-options='{ "freeScroll": true }'>
-				
-				<!-- NEW CELL -->
-				<div class="gallery-cell">
-					<div class="projectsGroup">
-						<div class="projectBigTop project01">
-								<div class="projectTitleBG"><a href="project01.html">
-									<h1 class="projectTitleBig"> CENSUS IRELAND</h1>
+			<div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "freeScroll": true }'>
+			    <div class="gallery-cell">
+			    	<div class="projectsGroup">
+						<div class="projectBigTop censusIreland"><a href="CensusIreland.html">
+							<div class="projectTitleBG">
+									<h1 class="projectTitleBig"> CENSUS IRELAND </h1>
 									<h2 class="projectSubTitleBig"> Tableau Data Visualisations: Year 4 Project </h2>
 								</div></a>
 						</div><!-- end project01 -->
 
-						<div class="projectSmallOneBottom project02">
-							<div class="projectTitleBGSmall"><a href="project02.html">
-								<h1 class="projectTitleSmall"> PHOTO GALLERY</h1>
-								<h2 class="projectSubTitleSmall"> Slim Framework, jQuery & AJAX </h2>
-							</div></a>
+						<div class="projectSmallOneBottom hidden">
 						</div><!-- end project02 -->
 						
-						<div class="projectSmallTwoBottom project03">
-							<div class="projectTitleBGSmall"><a href="project03.html">
-								<h1 class="projectTitleSmall"> VALKYRIE </h1>
-								<h2 class="projectSubTitleSmall"> JavaScript & HTML5 Canvas Game </h2>
+						<div class="projectSmallTwoBottom photoGallery">
+							<div class="projectTitleBGSmall"><a href="PhotoGallery.html">
+								<h1 class="projectTitleSmall"> PHOTO GALLERY </h1>
+								<h2 class="projectSubTitleSmall"> Slim Framework, jQuery & AJAX </h2>
 							</div></a>
 						</div><!-- end project03 -->
 					</div><!-- end projectGroup -->
-				</div><!-- end cell -->
-				
-				<!-- NEW CELL -->
-				<div class="gallery-cell">
-					<div class="projectsGroup">				
-						<div class="projectSmallOneTop project05">
-							<div class="projectTitleBGSmall"><a href="project05.html">
-								<h1 class="projectTitleSmall"> SELFIE APP </h1>
-								<h2 class="projectSubTitleSmall"> JavaScript & HTML5 Canvas App </h2>
+			    </div><!-- end cell -->
+
+			    <div class="gallery-cell">
+			    	<div class="projectsGroup">				
+						<div class="projectSmallOneTop valkyrie">
+							<div class="projectTitleBGSmall"><a href="Valkyrie.html">
+								<h1 class="projectTitleSmall"> VALKYRIE </h1>
+								<h2 class="projectSubTitleSmall"> JavaScript & HTML5 Canvas Game </h2>
 							</div></a>
 						</div><!-- end project05 -->
 						
-						<div class="projectSmallTwoTop project08"><a href="project08.html">
-							<div class="projectTitleBGSmall"><a href="project08.html">
-								<h1 class="projectTitleSmall"> SIGNIFICANCE TESTING </h1>
-								<h2 class="projectSubTitleSmall"> Statistical Analysis </h2>
+						<div class="projectSmallTwoTop selfieApp">
+							<div class="projectTitleBGSmall"><a href="SelfieApp.html">
+								<h1 class="projectTitleSmall"> SELFIE APP </h1>
+								<h2 class="projectSubTitleSmall"> JavaScript & HTML5 Canvas App </h2>
 							</div></a>
 						</div><!-- end project08 -->
 						
-						<div class="projectBigBottom project04">
-							<div class="projectTitleBG"><a href="project04.html">
+						<div class="projectBigBottom keepThemSafe">
+							<div class="projectTitleBG"><a href="KeepThemSafe.html">
 								<h1 class="projectTitleBig"> KEEP THEM SAFE </h1>
 								<h2 class="projectSubTitleBig"> Internet Safety Website: Year 3 Project </h2>
 							</div></a>
 						</div><!-- end project04 -->
 					</div><!-- end projectGroup -->
-				</div><!-- end cell -->
-				
-				<!-- NEW CELL -->
-				<div class="gallery-cell">
-					<div class="projectsGroup">					
-						<div class="projectBigTop project10">							
-							<div class="projectTitleBG"><a href="project10.html">
+			    </div><!-- end cell -->
+
+			    <div class="gallery-cell">
+			    	<div class="projectsGroup">
+						<div class="projectBigTop bootstrapNewspaper">
+							<div class="projectTitleBG"><a href="BootstrapNewspaper.html">
 								<h1 class="projectTitleBig"> BOOTSTRAP NEWSPAPER </h1>
 								<h2 class="projectSubTitleBig"> Web Design Concepts Using Bootstrap </h2>
 							</div></a>
-						</div><!-- end project10 -->						
-						
-						<div class="projectSmallOneBottom project06">
-							<div class="projectTitleBGSmall"><a href="project06.html">
-								<h1 class="projectTitleSmall"> LOCOMOTIVE </h1>
-								<h2 class="projectSubTitleSmall"> 3D Modelling Using 3DMax </h2>
+						</div><!-- end project01 -->
+
+						<div class="projectSmallOneBottom significanceTesting">
+							<div class="projectTitleBGSmall"><a href="SignificanceTesting.html">
+								<h1 class="projectTitleSmall"> SIGNIFICANCE TESTING </h1>
+								<h2 class="projectSubTitleSmall"> Statistical Analysis </h2>
 							</div></a>
-						</div><!-- end project06 -->
+						</div><!-- end project02 -->
 						
-						
-						<div class="projectSmallTwoBottom project09">
-							<div class="projectTitleBGSmall"><a href="project09.html">
+						<div class="projectSmallTwoBottom prototypingUA">
+							<div class="projectTitleBGSmall"><a href="Prototyping.html">
 								<h1 class="projectTitleSmall"> PROTOTYPING & USER ANALYSIS </h1>
 								<h2 class="projectSubTitleSmall"> Census Ireland Prototyping </h2>
 							</div></a>
-						</div><!-- end project09 -->
+						</div><!-- end project03 -->
 					</div><!-- end projectGroup -->
-				</div><!-- end cell -->
-				
-				<!-- NEW CELL -->
-				<div class="gallery-cell">
-					<div class="projectsGroup">
-						<div class="projectSmallOneTop project11">
-							<div class="projectTitleBGSmall"><a href="project11.html">
+			    </div><!-- end cell -->
+
+			    <div class="gallery-cell">
+			    	<div class="projectsGroup">				
+						<div class="projectSmallOneTop locomotive">
+							<div class="projectTitleBGSmall"><a href="Locomotive.html">
+								<h1 class="projectTitleSmall"> LOCOMOTIVE </h1>
+								<h2 class="projectSubTitleSmall"> 3D Modelling Using 3DMax </h2>
+							</div></a>
+						</div><!-- end project05 -->
+						
+						<div class="projectSmallTwoTop restfulAPI">
+							<div class="projectTitleBGSmall"><a href="RestfulAPI.html">
 								<h1 class="projectTitleSmall"> RESTFUL API GAMES LIST</h1>
 								<h2 class="projectSubTitleSmall"> MongoDB, Node.js & Backbone.js </h2>
 							</div></a>
-						</div><!-- end project11 -->
+						</div><!-- end project08 -->
 						
-						<div class="projectBigBottom project07">
-							<div class="projectTitleBG"><a href="project07.html">
+						<div class="projectBigBottom deforestation">
+							<div class="projectTitleBG"><a href="Deforestation.html">
 								<h1 class="projectTitleBig"> DEFORESTATION WEBSITE </h1>
 								<h2 class="projectSubTitleBig"> From Humble Beginnings.. Year 1 Project </h2>
 							</div></a>
-						</div><!-- end project07 -->
+						</div><!-- end project04 -->
 					</div><!-- end projectGroup -->
-				</div><!-- end cell -->	
-			</div><!-- end flickity -->
+			    </div><!-- end cell -->
+			</div><!-- end project gallery -->
 		</div><!-- end portfolioPage -->
 
 		
@@ -236,7 +235,7 @@
 				</div><!-- end row -->
 				
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-5">
 						<div class="profiler">
 							<div class="profileBG">
 								<h1 class="aboutMeName"> JONATHAN DEMPSEY </h1>
@@ -244,9 +243,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8">
-						<p class="aboutMeParagraph"> Hi! My name is <span class="Bold">Jonathan</span>, and I’m a 23 year old student in my final year of 
-							Web Engineering / Multimedia Systems in IADT Dun Laoghaire. In November, I’ll be 
+
+					<div class="col-sm-1">
+					</div>
+
+					<div class="col-md-8 col-sm-6">
+						<p class="aboutMeParagraph"> Hi! My name is <span class="Bold">Jonathan</span>, and I’m a 24 year old graduate from 
+							Dun Laoghaire Institute of Art, Design and Technology. In November, I’ll be 
 							graduating from IADT with my <span class="Bold">BSc (Honours) in Multimedia 
 							Systems/Web Engineering</span> with a <span class="Bold">Second Class Honours Grade 1 (2:1)</span>, exciting stuff! 
 						</p>
@@ -255,7 +258,7 @@
 						<p class="aboutMeParagraph">
 							IADT has taught me to be multi-disciplinary from working 
 							on a wide variety of projects, including coding in <span class="Bold">front-end</span> and <span class="Bold">back-end</span> for web applications, <span class="Bold">UI</span> and <span class="Bold">UX design</span>, using 
-							numerous <span class="Bold">adobe products</span> (Photoshop, After Effects, etc.), <span class="Bold">research</span> and <span class="Bold">working on team projects</span>. 
+							the <span class="Bold">Adobe Creative Suite</span> (Photoshop, After Effects, etc.), <span class="Bold">research</span> and working on <span class="Bold">team projects</span>. 
 						</p>
 						<br>
 						</br>
